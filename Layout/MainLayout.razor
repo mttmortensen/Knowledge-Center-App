@@ -1,0 +1,27 @@
+﻿@inherits LayoutComponentBase
+
+<div class="d-flex flex-column flex-md-row min-vh-100">
+
+    <!-- Sidebar -->
+    <nav class="bg-dark text-white p-3 sidebar flex-md-column flex-row align-items-center align-items-md-start">
+        <a class="nav-link text-white" href="">Home</a>
+        <a class="nav-link text-white" href="">KNs</a>
+        <a class="nav-link text-white" href="">Domains</a>
+        <a class="nav-link text-white" href="">Logs</a>
+        <a class="nav-link text-white" href="">Tags</a>
+    </nav>
+
+    <!-- Main content -->
+    <div class="flex-fill">
+        <!-- Topbar -->
+        <header class="bg-light border-bottom sticky-top p-2 d-flex justify-content-end">
+            <button class="btn btn-danger btn-sm">Logout</button>
+        </header>
+
+        <!-- Page content -->
+        <main class="p-3">
+            @Body
+        </main>
+    </div>
+
+</div>
